@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="statsModule">
+        <h1>Stats</h1>
+        <div class="continer">
+            <script id="stats-template" type="text/template">
+                <p>People: {{people}}</p>
+            </script>
+        </div>
+    </section>
+
+    <section id="peopleModule">
+        <h1>Cats</h1>
+        <input type="text" placeholder="name" />
+        <button id="addPerson">Add Cat</button>
+        <ul id="people">
+            <script id="people-template" type="text/template">
+                {{#people}}
+                    <li>
+                        <span>{{.}}</span>
+                        <i class="del">X</i>
+                    </li>
+                {{/people}}
+            </script>
+        </ul>
+    </section>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/handlebars/dist/handlebars.js"></script>
+
+    <!-- <script>
+        var App = App || {};
+        App.EVENTSET = [
+            "one",
+            "two",
+            "three",
+            "four",
+            "five"
+        ]
+    </script> -->
+
+    <!-- <script src="js/main.js"></script> -->
+    <!-- <script src="js/SpaghettiCode.js"></script> -->
+    <!-- <script src="js/ObjectLiteralModule.js"></script> -->
+    <!-- <script src="js/RevealingModule.js"></script> -->
+
+    <!-- Module -->
+    <!-- <script src="js/modules/bus.js"></script> -->
+    <!-- <script src="js/modules/stats.js"></script> -->
+    <!-- <script src="js/modules/people.js"></script> -->
+
+    <script src="js/modules/bus.js"></script> -->
+    <script src="js/application/Stats.js"></script>
+    <script src="js/application/People.js"></script>
+    <script src="js/application/App.js"></script>
+</body>
+</html>
